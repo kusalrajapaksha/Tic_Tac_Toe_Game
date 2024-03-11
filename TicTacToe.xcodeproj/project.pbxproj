@@ -11,6 +11,15 @@
 		5981CACD2B9E259200128ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981CACC2B9E259200128ACA /* ContentView.swift */; };
 		5981CACF2B9E259300128ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5981CACE2B9E259300128ACA /* Assets.xcassets */; };
 		5981CAD22B9E259300128ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5981CAD12B9E259300128ACA /* Preview Assets.xcassets */; };
+		5981CAD92B9E25C600128ACA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981CAD82B9E25C600128ACA /* GameView.swift */; };
+		5981CADB2B9E36C500128ACA /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981CADA2B9E36C500128ACA /* Alerts.swift */; };
+		5981CADD2B9E3FAC00128ACA /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981CADC2B9E3FAC00128ACA /* GameViewModel.swift */; };
+		5981CADF2B9E42C100128ACA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981CADE2B9E42C100128ACA /* GameModel.swift */; };
+		599D494E2B9ECDEE0026C2DF /* CustomViewModeifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D494D2B9ECDEE0026C2DF /* CustomViewModeifiers.swift */; };
+		599D49502B9ECE330026C2DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D494F2B9ECE330026C2DF /* Extensions.swift */; };
+		599D49532B9ED3EA0026C2DF /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 599D49522B9ED3EA0026C2DF /* Ubuntu-Bold.ttf */; };
+		599D49552B9ED3F50026C2DF /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D49542B9ED3F50026C2DF /* CustomFont.swift */; };
+		599D49582B9EDA8C0026C2DF /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 599D49572B9EDA8C0026C2DF /* Ubuntu-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,16 @@
 		5981CACC2B9E259200128ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5981CACE2B9E259300128ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5981CAD12B9E259300128ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5981CAD82B9E25C600128ACA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5981CADA2B9E36C500128ACA /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		5981CADC2B9E3FAC00128ACA /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5981CADE2B9E42C100128ACA /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		599D494D2B9ECDEE0026C2DF /* CustomViewModeifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModeifiers.swift; sourceTree = "<group>"; };
+		599D494F2B9ECE330026C2DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		599D49522B9ED3EA0026C2DF /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		599D49542B9ED3F50026C2DF /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		599D49562B9ED42C0026C2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		599D49572B9EDA8C0026C2DF /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +70,12 @@
 		5981CAC92B9E259200128ACA /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				599D49562B9ED42C0026C2DF /* Info.plist */,
+				599D49512B9ED3DB0026C2DF /* Fonts */,
 				5981CACA2B9E259200128ACA /* TicTacToeApp.swift */,
 				5981CACC2B9E259200128ACA /* ContentView.swift */,
+				5981CAE02B9E432E00128ACA /* Game */,
+				5981CAE12B9E434C00128ACA /* Utils */,
 				5981CACE2B9E259300128ACA /* Assets.xcassets */,
 				5981CAD02B9E259300128ACA /* Preview Content */,
 			);
@@ -65,6 +88,36 @@
 				5981CAD12B9E259300128ACA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5981CAE02B9E432E00128ACA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5981CADE2B9E42C100128ACA /* GameModel.swift */,
+				5981CAD82B9E25C600128ACA /* GameView.swift */,
+				5981CADC2B9E3FAC00128ACA /* GameViewModel.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		5981CAE12B9E434C00128ACA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				599D494F2B9ECE330026C2DF /* Extensions.swift */,
+				599D494D2B9ECDEE0026C2DF /* CustomViewModeifiers.swift */,
+				5981CADA2B9E36C500128ACA /* Alerts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		599D49512B9ED3DB0026C2DF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				599D49572B9EDA8C0026C2DF /* Ubuntu-Regular.ttf */,
+				599D49522B9ED3EA0026C2DF /* Ubuntu-Bold.ttf */,
+				599D49542B9ED3F50026C2DF /* CustomFont.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599D49582B9EDA8C0026C2DF /* Ubuntu-Regular.ttf in Resources */,
 				5981CAD22B9E259300128ACA /* Preview Assets.xcassets in Resources */,
 				5981CACF2B9E259300128ACA /* Assets.xcassets in Resources */,
+				599D49532B9ED3EA0026C2DF /* Ubuntu-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599D49552B9ED3F50026C2DF /* CustomFont.swift in Sources */,
 				5981CACD2B9E259200128ACA /* ContentView.swift in Sources */,
+				5981CAD92B9E25C600128ACA /* GameView.swift in Sources */,
+				5981CADB2B9E36C500128ACA /* Alerts.swift in Sources */,
+				599D49502B9ECE330026C2DF /* Extensions.swift in Sources */,
+				599D494E2B9ECDEE0026C2DF /* CustomViewModeifiers.swift in Sources */,
+				5981CADD2B9E3FAC00128ACA /* GameViewModel.swift in Sources */,
 				5981CACB2B9E259200128ACA /* TicTacToeApp.swift in Sources */,
+				5981CADF2B9E42C100128ACA /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +337,13 @@
 				DEVELOPMENT_TEAM = 49893UM4W9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +368,13 @@
 				DEVELOPMENT_TEAM = 49893UM4W9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
