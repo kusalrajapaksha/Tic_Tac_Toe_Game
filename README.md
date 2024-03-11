@@ -1,5 +1,7 @@
 # Tic Tac Toe Game
 
+![2](https://github.com/kusalrajapaksha/Tic_Tac_Toe_Game/assets/72430450/87d0f72d-8403-4c0d-afee-fc410d1cc3a5)
+
 This is a simple implementation of the classic Tic Tac Toe game using SwiftUI. The game allows you to play against an AI opponent.
 
 It looks simple but winning this game is hard because;
