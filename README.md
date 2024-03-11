@@ -35,7 +35,11 @@ It looks simple but winning this game is hard because;
 ![Simulator Screenshot - iPhone 15 Pro - 2024-03-11 at 15 29 55](https://github.com/kusalrajapaksha/Tic_Tac_Toe_Game/assets/72430450/1552794b-9bbe-440b-a09d-d7f7d2751789)
 ![Simulator Screenshot - iPhone 15 Pro - 2024-03-11 at 15 30 21](https://github.com/kusalrajapaksha/Tic_Tac_Toe_Game/assets/72430450/ec908345-c985-46c8-8680-b5ad8d25df1e)
 
-  
+## Demo
+
+![SimulatorScreenRecording-iPhone15Pro-2024-03-11at15 10 52-ezgif com-video-to-gif-converter](https://github.com/kusalrajapaksha/Tic_Tac_Toe_Game/assets/72430450/53dccce2-89ed-4d38-9789-345ce3b209da)
+
+
 
 
 
